@@ -4,10 +4,10 @@ def reformat_languages(languages)
   languages.each do |name, language|
     language.each do |type, value|
     if new_hash.include?(type)
-        new_hash[name][:style] << style
+        new_hash[type][:style] << style
       else
-        new_hash[name] = value
-        new_hash[name][:style] = [style]
+        new_hash[type] = value
+        new_hash[type][:style] = [style]
       end
     end
   end
