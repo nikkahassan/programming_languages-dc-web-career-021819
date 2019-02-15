@@ -10,5 +10,5 @@ languages.each do |name, language|
     end
   end
 end
-new_hash
+return new_hash
 end
